@@ -1,9 +1,9 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=155px src="https://i.imgur.com/E9jtFZ5.png" alt="Project logo"></a>
+  <img width="55px" height="55px" src="https://i.imgur.com/K31sBGO.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Elephant CRM</h3>
+<h3 align="center">Watermelon HR</h3>
 
 <div align="center">
 
