@@ -44,7 +44,7 @@ Test component
 npm test
 ```
 
-## ⛏️ To Do</a>
+## ✔️ To Do</a>
 - Refactor API module for better reusuablity
 - Enhance UI for the table component
 - Handle loading separately as a component
