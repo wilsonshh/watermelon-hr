@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import {
   COffcanvas,
@@ -10,7 +9,7 @@ import {
 
 import PropTypes from 'prop-types'
 
-const PeopleDetailView = (props) => {
+const PeopleDetailView = ({ person, open, onClose }) => {
   const keysToDisplay = [
     'height',
     'mass',
@@ -30,8 +29,6 @@ const PeopleDetailView = (props) => {
     textTransform: 'capitalize',
   }
 
-  const detailValue = {}
-
   const detailList = {
     display: 'flex',
     flexFlow: 'row',
@@ -45,17 +42,17 @@ const PeopleDetailView = (props) => {
 
   return (
     <>
-      <COffcanvas placement="end" visible={props.open} onHide={props.onClose}>
+      <COffcanvas placement="end" visible={open} onHide={onClose}>
         <COffcanvasHeader>
-          <COffcanvasTitle>{props.person.name}</COffcanvasTitle>
-          <CCloseButton className="text-reset" onClick={props.onClose} />
+          <COffcanvasTitle>{person.name}</COffcanvasTitle>
+          <CCloseButton className="text-reset" onClick={onClose} />
         </COffcanvasHeader>
         <COffcanvasBody>
           <ul style={ulStyle}>
             {keysToDisplay.map((key) => (
               <li key={key} style={detailList}>
                 <div style={detailTitle}>{onRemoveUnderScore(key)}:</div>
-                <div style={detailValue}>{props.person[key]}</div>
+                <div>{person[key]}</div>
               </li>
             ))}
           </ul>
@@ -65,13 +62,10 @@ const PeopleDetailView = (props) => {
   )
 }
 
-PeopleDetailView.propsTypes = {
-  // id use to get people by id
+PeopleDetailView.propTypes = {
   person: PropTypes.any.isRequired,
-  //   open to open the view dialog
   open: PropTypes.bool.isRequired,
-  //   use to close the view dialog
-  onClick: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
 }
 
 export default PeopleDetailView
