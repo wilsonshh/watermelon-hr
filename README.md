@@ -44,6 +44,16 @@ Test component
 npm test
 ```
 
+## ⛏️ To Do</a>
+- Refactor API module for better reusuablity
+- Enhance UI for the table component
+- Handle loading separately as a component
+- Add proper error handling and reporting
+- Use Cypress for end to end test
+- Add CI/CD for automatic deployment
+- Use Husky to enforce pre-commit hooks for testing and linting.
+- Use react-virtualized for efficiently rendering large lists or tables.
+
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [React](https://www.mysql.com/) - React
