@@ -54,6 +54,7 @@ npm test
 - Use Husky to enforce pre-commit hooks for testing and linting.
 - Use react-virtualized for efficiently rendering large lists or tables.
 
+- complete other components like annoucement etc.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [React](https://www.mysql.com/) - React
